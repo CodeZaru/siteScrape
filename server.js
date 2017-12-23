@@ -32,7 +32,7 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use('/bootstrap', express.static(__dirname + "/node_modules/bootstrap/dist"));
 app.use('/jquery', express.static(__dirname + "/node_modules/jquery/dist"));
 
-mongoose.connect();
+mongoose.connect('mongodb://heroku_n00qpzcd:rv0utake4lehokjsg5ea8m2adv@ds163806.mlab.com:63806/heroku_n00qpzcd');
 let db = mongoose.connection;
 
 // Show any mongoose errors
