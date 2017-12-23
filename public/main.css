@@ -1,0 +1,99 @@
+.a-custom:hover {
+    text-decoration: none;
+}
+
+.scrape-btn:hover {
+    cursor: pointer !important;
+}
+
+.my-jumbotron {
+    height: 400px;
+    background-image: url('./img/jumbo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.mt-20-row {
+    margin-top: 20px;
+}
+
+.mb-20-row {
+    margin-bottom: 20px;
+}
+
+.bg-dark {
+    background-color: black!important;
+}
+
+.bg-card {
+    background-color: #e1dac7!important;
+}
+
+.text-white {
+    color: #464a4e!important;
+}
+
+.img-crop {
+    height: 180px;
+    overflow: hidden;
+}
+
+.card-title-holder {
+    min-height: 34px;
+}
+
+.my-card-img {
+    filter: brightness(50%) grayscale(50%);
+}
+
+.card-columns {
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+
+.my-footer {
+    background-color: #9d9d9d;
+    height: 200px;
+}
+
+.footer-ic {
+    font-size: 40px;
+    color: #000;
+}
+
+.footer-ic:hover {
+    color: #000;
+}
+
+@media (max-width: 1060px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+    }
+    .card-columns .card {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-columns {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+
+    .current-article-card {
+        margin-bottom: 20px;
+    }
+}

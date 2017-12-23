@@ -1,0 +1,36 @@
+{
+  "name": "sitescrape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeZaru/siteScrape.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeZaru/siteScrape/issues"
+  },
+  "homepage": "https://github.com/CodeZaru/siteScrape#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0-beta",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11",
+    "jquery": "^3.2.1",
+    "method-override": "^2.3.10",
+    "mongojs": "^2.4.1",
+    "mongoose": "^4.13.7",
+    "morgan": "^1.9.0",
+    "popper.js": "^1.12.9",
+    "request": "^2.83.0"
+  }
+}
