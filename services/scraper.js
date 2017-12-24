@@ -3,14 +3,14 @@ const request = require('request');
 
 module.exports = callback => {
 
-    request("https://www.runnersworld.com", (error, response, html) => {
+    request("https://www.runnersworld.com/general-interest", (error, response, html) => {
 
         let results = [];
         let $ = cheerio.load(html);
 
         let articleObj = {};
 
-        $("channel-image").each((i, element) => {
+        $("div.channel-image").each((i, element) => {
 
 
             let img = $(element).children('img').children('a').children('picture').children('source').attr('srcset');
