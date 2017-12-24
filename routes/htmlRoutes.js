@@ -4,7 +4,8 @@ const Comments = require('../models/Comment');
 module.exports = app => {
 
     app.get('/', (req, res) => {
-        Article.find().sort({scrapeDate: 1}).exec((err, docs) => {
+//        Article.find().sort({scrapeDate: 1}).exec((err, docs) => {
+        Article.find().exec((err, docs) => {            
             res.render('index', { docs });
         });
     });

@@ -1,7 +1,7 @@
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
-let CommentSchema = new Schema({
+let CommentSchema2 = new Schema({
     'name': {
         'type': String,
         'required': true
@@ -20,6 +20,6 @@ let CommentSchema = new Schema({
     }
 });
 
-let Comment = mongoose.model('Comment', CommentSchema);
+let Comment = mongoose.model('Comment', CommentSchema2);
 
 module.exports = Comment;

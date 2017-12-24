@@ -2,7 +2,7 @@ let mongoose = require('mongoose');
 
 let Schema = mongoose.Schema;
 
-let ArticleSchema = new Schema({
+let ArticleSchema2 = new Schema({
     'title': {
         'type': String,
         'required': true,
@@ -11,10 +11,10 @@ let ArticleSchema = new Schema({
         'type': String,
         'required': true
     },
-    'date': {
-        'type': String,
-        'required': true,
-    },
+   // 'date': {
+   //     'type': String,
+   //     'required': true,
+   // },
     'link': {
         'type': String,
         'required': true
@@ -37,6 +37,6 @@ let ArticleSchema = new Schema({
 	}]
 });
 
-let Article = mongoose.model('Article', ArticleSchema);
+let Article = mongoose.model('Article', ArticleSchema2);
 
 module.exports = Article;
